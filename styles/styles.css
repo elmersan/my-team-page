@@ -1,0 +1,159 @@
+@import url("./wrapper.css");
+
+:root {
+  /* font */
+  --font-base: "Poppins", sans-serif;
+  --font-base2: "PT Serif", serif;
+  --headline1: bold 9.5rem / 15.4rem var(--font-base);
+  --headline2: bold 5.4rem / 9.5rem var(--font-base);
+  --headline3: bold 4.8rem / 7.7rem var(--font-base);
+  --headline4: bold 3.6rem / 5.5rem var(--font-base2);
+  --headline5: bold 2.4rem / 3.8rem var(--font-base);
+  --body1: normal 1.8rem / 2.5rem var(--font-base);
+  --body2: normal 1.4rem / 2.2rem var(--font-base);
+  --button: bold 1.4rem / 2.2rem var(--font-base);
+  --caption: normal 1rem / 1.9rem var(--font-base2);
+
+  /* colors */
+  --background: #020304;
+}
+
+.debugger {
+  border: 1px solid red;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: var(--body1);
+}
+
+h1 {
+  font: var(--headline4);
+  margin-bottom: 3.8rem;
+}
+
+h3 {
+  font: var(--body1);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin: 0;
+  margin-top: 1.5rem;
+  font: var(--body2);
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+}
+
+p {
+  font: var(--body2);
+  margin: 0;
+}
+
+span {
+  font: var(--caption);
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.content-text {
+  padding-block-end: 3.6rem;
+}
+
+.content-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 16rem);
+  grid-gap: 2.5rem;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  gap: 1rem;
+}
+
+.item img {
+  max-width: 100%;
+}
+
+div.item:nth-child(even) {
+  margin-top: 5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2.4rem;
+}
+
+footer p a {
+  color: rgb(26, 26, 26);
+}
+
+@media only screen and (min-width: 376px) {
+  .content-images {
+    grid-template-columns: repeat(auto-fill, 17rem);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .content-text {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 9rem 8.6rem;
+  }
+
+  .content-text div {
+    flex: 1;
+  }
+
+  .content-images {
+    grid-gap: 6.7rem;
+  }
+
+  p {
+    font: var(--body1);
+  }
+
+  h1 {
+    margin: 0;
+    flex: 1;
+  }
+
+  h4 {
+    font: var(--body1);
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 1.2rem;
+  }
+
+  div.item:nth-child(even) {
+    margin-top: 0;
+  }
+
+  div.item:nth-child(2),
+  div.item:nth-child(5) {
+    margin-top: 5rem;
+  }
+
+  .content-images {
+    grid-template-columns: repeat(auto-fill, 23.8rem);
+    padding-bottom: 9.1rem;
+  }
+}
