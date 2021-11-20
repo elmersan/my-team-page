@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://elmersan.github.io/my-team-page/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/elmersan/my-team-page/" target="_blank">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">
+    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U" target="_blank">
       Challenge
     </a>
   </h3>
@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot]('./images/my-team-page.png')
+![screenshot](https://github.com/elmersan/my-team-page/blob/master/images/my-team-page.png)
 
 ### Built With
 
